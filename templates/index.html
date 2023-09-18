@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Kvasir Dataset Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+		<noscript><link rel="stylesheet" href="static/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="content">
+					<h1><a href="#">위 내시경 질병 분류</a></h1>
+					<p>클릭 한번으로 간단하게 질병을 조회해보세요!</p>
+					<ul class="actions">
+						<li>
+							<form id="upload" action="/predict" method="POST" enctype="multipart/form-data">
+                				<div class="upload-btn-wrapper">
+                    				<input type="file" value="Result" name="image" class="button primary icon solid fa-download">
+									<button class="button primary icon solid fa-download">Result</button>
+                				</div>
+							</form>
+						</li>
+						<li><a href="#one" class="button icon solid fa-chevron-down scrolly">Learn More</a></li>
+					</ul>
+				</div>
+				<div class="image phone"><div class="inner"><img src="{{url_for('static', filename='IMG/screen.jpg')}}" alt="" /></div></div>
+			</header>
+
+		<!-- One -->
+			<section id="one" class="wrapper style2 special">
+				<header class="major">
+					<h2>Kvasir Dataset<br /></h2>
+				</header>
+				<ul class="icons major">
+					<li><span class="icon solid fa-camera-retro"><span class="label">Shoot</span></span></li>
+					<li><span class="icon solid fa-sync"><span class="label">Process</span></span></li>
+					<li><span class="icon solid fa-cloud"><span class="label">Upload</span></span></li>
+				</ul>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="wrapper">
+				<div class="inner alt">
+					<section class="spotlight">
+						<div class="image"><img src="{{url_for('static', filename='IMG/1.jpg')}}" alt="" /></div>
+						<div class="content">
+							<h3>dyed-lifted-polyps</h3>
+							<p>Morbi mattis ornare ornare. Duis quam turpis, gravida at leo elementum elit fusce accumsan dui libero, quis vehicula lectus ultricies eu. In convallis amet leo non sapien iaculis efficitur consequat lorem ipsum.</p>
+						</div>
+					</section>
+					<section class="spotlight">
+						<div class="image"><img src="{{url_for('static', filename='IMG/2.jpg')}}" alt="" /></div>
+						<div class="content">
+							<h3>dyed-resection-margins</h3>
+							<p>Morbi mattis ornare ornare. Duis quam turpis, gravida at leo elementum elit fusce accumsan dui libero, quis vehicula lectus ultricies eu. In convallis amet leo non sapien iaculis efficitur consequat lorem ipsum.</p>
+						</div>
+					</section>
+					<section class="spotlight">
+						<div class="image"><img src="{{url_for('static', filename='IMG/3.jpg')}}" alt="" /></div>
+						<div class="content">
+							<h3>esophagitis</h3>
+							<p>Morbi mattis ornare ornare. Duis quam turpis, gravida at leo elementum elit fusce accumsan dui libero, quis vehicula lectus ultricies eu. In convallis amet leo non sapien iaculis efficitur consequat lorem ipsum.</p>
+						</div>
+					</section>
+					<section class="spotlight">
+						<div class="image"><img src="{{url_for('static', filename='IMG/4.jpg')}}" alt="" /></div>
+						<div class="content">
+							<h3>normal-cecum</h3>
+							<p>Morbi mattis ornare ornare. Duis quam turpis, gravida at leo elementum elit fusce accumsan dui libero, quis vehicula lectus ultricies eu. In convallis amet leo non sapien iaculis efficitur consequat lorem ipsum.</p>
+						</div>
+					</section>
+					<section class="spotlight">
+						<div class="image"><img src="{{url_for('static', filename='IMG/5.jpg')}}" alt="" /></div>
+						<div class="content">
+							<h3>normal-pylorus</h3>
+							<p>Morbi mattis ornare ornare. Duis quam turpis, gravida at leo elementum elit fusce accumsan dui libero, quis vehicula lectus ultricies eu. In convallis amet leo non sapien iaculis efficitur consequat lorem ipsum.</p>
+						</div>
+					</section>
+					<section class="spotlight">
+						<div class="image"><img src="{{url_for('static', filename='IMG/6.jpg')}}" alt="" /></div>
+						<div class="content">
+							<h3>normal-z-line</h3>
+							<p>Morbi mattis ornare ornare. Duis quam turpis, gravida at leo elementum elit fusce accumsan dui libero, quis vehicula lectus ultricies eu. In convallis amet leo non sapien iaculis efficitur consequat lorem ipsum.</p>
+						</div>
+					</section>
+					<section class="spotlight">
+						<div class="image"><img src="{{url_for('static', filename='IMG/7.jpg')}}" alt="" /></div>
+						<div class="content">
+							<h3>polyps</h3>
+							<p>Morbi mattis ornare ornare. Duis quam turpis, gravida at leo elementum elit fusce accumsan dui libero, quis vehicula lectus ultricies eu. In convallis amet leo non sapien iaculis efficitur consequat lorem ipsum.</p>
+						</div>
+					</section>
+					<section class="spotlight">
+						<div class="image"><img src="{{url_for('static', filename='IMG/8.jpg')}}" alt="" /></div>
+						<div class="content">
+							<h3>ulcerative-colitis</h3>
+							<p>Morbi mattis ornare ornare. Duis quam turpis, gravida at leo elementum elit fusce accumsan dui libero, quis vehicula lectus ultricies eu. In convallis amet leo non sapien iaculis efficitur consequat lorem ipsum.</p>
+						</div>
+					</section>
+					<section class="special">
+						<ul class="icons labeled">
+							<li><span class="icon solid fa-camera-retro"><span class="label">Ipsum lorem accumsan</span></span></li>
+							<li><span class="icon solid fa-sync"><span class="label">Sed vehicula elementum</span></span></li>
+							<li><span class="icon solid fa-cloud"><span class="label">Elit fusce consequat</span></span></li>
+							<li><span class="icon solid fa-code"><span class="label">Lorem nullam tempus</span></span></li>
+							<li><span class="icon solid fa-desktop"><span class="label">Adipiscing amet sapien</span></span></li>
+						</ul>
+					</section>
+				</div>
+			</section>
+
+		<!-- Three -->
+			<section id="three" class="wrapper style2 special">
+				<header class="major">
+					<h2>Magna leo sapien gravida</h2>
+					<p>Gravida at leo elementum elit fusce accumsan dui libero, quis vehicula<br />
+					lectus ultricies eu. In convallis amet leo sapien iaculis efficitur.</p>
+				</header>
+				<ul class="actions special">
+					<li><a href="#" class="button primary icon solid fa-download">Download</a></li>
+					<li><a href="#" class="button">Learn More</a></li>
+				</ul>
+			</section>
+<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+				</ul>
+				<p class="copyright">&copy; Untitled. Credits: <a href="http://html5up.net">HTML5 UP</a></p>
+			</footer>
+		<!-- Scripts -->
+			<script src="{{url_for('static', filename='JS/jquery.min.js')}}"></script>
+			<script src="{{url_for('static', filename='JS/jquery.scrolly.min.js')}}"></script>
+			<script src="{{url_for('static', filename='JS/browser.min.js')}}"></script>
+			<script src="{{url_for('static', filename='JS/breakpoints.min.js')}}"></script>
+			<script src="{{url_for('static', filename='JS/util.js')}}"></script>
+			<script src="{{url_for('static', filename='JS/main.js')}}"></script>
+	</body>
+</html>
